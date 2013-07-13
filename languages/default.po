@@ -1,0 +1,286 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RCG Forest 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+
+#: 404.php:8
+msgid "Error 404: Page Not Found"
+msgstr ""
+
+#: 404.php:11
+msgid "We can not find what you are looking for."
+msgstr ""
+
+#: 404.php:12
+#, php-format
+msgid "Return <a href=\"%s\">home</a>, or try search."
+msgstr ""
+
+#: archive.php:16
+msgid "Author Archives: "
+msgstr ""
+
+#: archive.php:20
+msgid "Category Archives: "
+msgstr ""
+
+#: archive.php:23
+msgid "Tag Archives: "
+msgstr ""
+
+#: archive.php:26
+msgid "Daily Archives: "
+msgstr ""
+
+#: archive.php:29
+msgid "Monthly Archives: "
+msgstr ""
+
+#: archive.php:32
+msgid "Yearly Archives: "
+msgstr ""
+
+#: archive.php:35
+msgid "Archives"
+msgstr ""
+
+#: archive.php:68
+#: index.php:16
+#: search.php:21
+#: single.php:12
+msgid "Post navigation"
+msgstr ""
+
+#: archive.php:69
+#: index.php:17
+#: search.php:22
+msgid "&larr; Older posts"
+msgstr ""
+
+#: archive.php:70
+#: index.php:18
+#: search.php:23
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: archive.php:78
+msgid "No Results"
+msgstr ""
+
+#: archive.php:81
+msgid "Sorry, but no entries were found for this archive."
+msgstr ""
+
+#: comments.php:12
+#, php-format
+msgid "One reply"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:25
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:26
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:27
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:34
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:8
+#: content.php:42
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:13
+#: content.php:50
+#: image.php:45
+msgid "Edit"
+msgstr ""
+
+#: content.php:14
+#: content.php:19
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: content.php:37
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: content.php:54
+#: image.php:49
+msgid "Leave a reply"
+msgstr ""
+
+#: content.php:54
+#: image.php:49
+msgid "1 Reply"
+msgstr ""
+
+#: content.php:54
+#: image.php:49
+msgid "% Replies"
+msgstr ""
+
+#: footer.php:10
+msgid "Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:10
+msgid "Proudly powered by WordPress"
+msgstr ""
+
+#: footer.php:12
+msgid "Theme RCG Forest"
+msgstr ""
+
+#: functions.php:19
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:44
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:72
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:74
+msgid "Appears on posts and pages sidebar, except when using a custom page template."
+msgstr ""
+
+#: functions.php:81
+msgid "First Footer Widget"
+msgstr ""
+
+#: functions.php:83
+msgid "Appears on posts and pages footer (left), except when using Front Page template."
+msgstr ""
+
+#: functions.php:90
+msgid "Second Footer Widget"
+msgstr ""
+
+#: functions.php:92
+msgid "Appears on posts and pages footer (center), except when using Front Page template."
+msgstr ""
+
+#: functions.php:99
+msgid "Third Footer Widget"
+msgstr ""
+
+#: functions.php:101
+msgid "Appears on posts and pages footer (right), except when using Front Page template."
+msgstr ""
+
+#: functions.php:108
+msgid "First Front Page Footer Widget"
+msgstr ""
+
+#: functions.php:110
+msgid "Appears when using Front Page template on footer (left)."
+msgstr ""
+
+#: functions.php:117
+msgid "Second Front Page Footer Widget"
+msgstr ""
+
+#: functions.php:119
+msgid "Appears when using Front Page template on footer (center)."
+msgstr ""
+
+#: functions.php:126
+msgid "Third Front Page Footer Widget"
+msgstr ""
+
+#: functions.php:128
+msgid "Appears when using Front Page template on footer (right)."
+msgstr ""
+
+#: functions.php:273
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: functions.php:276
+#: functions.php:277
+msgid ", "
+msgstr ""
+
+#: functions.php:280
+#, php-format
+msgid "Published by <span class=\"by-author\">%1$s</span>, in %2$s."
+msgstr ""
+
+#: functions.php:282
+#, php-format
+msgid "Published by <span class=\"by-author\">%1$s</span>."
+msgstr ""
+
+#: header.php:46
+msgid "Menu"
+msgstr ""
+
+#: header.php:47
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:57
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:58
+msgid "Next &rarr;"
+msgstr ""
+
+#: index.php:26
+msgid "No posts to display"
+msgstr ""
+
+#: index.php:29
+msgid "Sorry, but no results were found."
+msgstr ""
+
+#: search.php:10
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:31
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:34
+msgid "Sorry, but no entries matched your search criteria. Please try again with different keywords."
+msgstr ""
+
+#: single.php:13
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: single.php:14
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
