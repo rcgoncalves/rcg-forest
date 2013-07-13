@@ -247,7 +247,7 @@ function rcg_forest_admin_html() {
 ?>
 	<div id="top">
 		<div id="top1">
-			<h1><a href="http://google.com"><?php bloginfo('name'); ?></a></h1>
+			<h1><a href="."><?php bloginfo('name'); ?></a></h1>
 			<h2><?php bloginfo('description'); ?></h2>
 		</div>
 		<div id="top2">

@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?
+		<?php
 		if(is_single()) :
 		?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -34,7 +34,7 @@
 			the_content(__('Continue reading &rarr;', 'rcg-forest'));
 			?>
 		</div>
-		<?
+		<?php
 		if(is_single()) :
 			wp_link_pages(array('before' =>'<div class="page-links">' . __('Pages:', 'rcg-forest'), 'after' => '</div>'));
 			?>
