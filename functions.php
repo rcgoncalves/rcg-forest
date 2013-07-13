@@ -266,8 +266,8 @@ function rcg_forest_admin_html() {
 
 
 // Prints entry meta information (category and author).
-if(!function_exists('rcg_entry_meta')) :
-function rcg_entry_meta() {
+if(!function_exists('rcg_forest_entry_meta')) :
+function rcg_forest_entry_meta() {
 	$author = sprintf('<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 		esc_url(get_author_posts_url(get_the_author_meta('ID'))),
 		esc_attr(sprintf(__('View all posts by %s', 'rcg-forest'), get_the_author())),
@@ -290,8 +290,8 @@ function rcg_entry_meta() {
 endif;
 
 // Prints entry date.
-if(!function_exists('rcg_entry_date')) :
-function rcg_entry_date() {
+if(!function_exists('rcg_forest_entry_date')) :
+function rcg_forest_entry_date() {
 	$date = sprintf('<time class="entry-date" datetime="%1$s">%2$s</time>',
 		esc_attr(get_the_date('c')),
 		esc_html(get_the_date())
@@ -301,7 +301,7 @@ function rcg_entry_date() {
 endif;
 
 // Fix issue with invalid rel types.
-function rcg_fix_category_tag ($cat_output) {
+function rcg_forest_fix_category_tag ($cat_output) {
 	return str_replace(array('rel="category tag"', 'rel="category"'), '', $cat_output);
 }
-add_filter('the_category', 'rcg_fix_category_tag');
+add_filter('the_category', 'rcg_forest_fix_category_tag');
