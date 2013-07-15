@@ -383,11 +383,13 @@ img.wp-smiley,
 .nav-previous {
 	float: left;
 	width: 50%;
+	word-wrap: break-word;
 }
 .nav-next {
 	float: right;
 	text-align: right;
 	width: 50%;
+	word-wrap: break-word;
 }
 .nav-single + .comments-area,
 #comment-nav-above {
@@ -680,6 +682,12 @@ footer[role="contentinfo"] a:hover {
 	font-size: 12px;
 	font-size: 0.8571428571rem;
 	font-weight: normal;
+}
+.entry-header .entry-date a {
+	color: #757575;
+}
+.entry-header .entry-date a:hover {
+	color: #21759b;
 }
 .entry-meta .comments-link {
 	float: right;
