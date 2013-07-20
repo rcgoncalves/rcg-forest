@@ -302,6 +302,7 @@ img.wp-post-image {
 }
 .wp-caption {
 	max-width: 100%;
+	overflow: hidden;
 }
 .wp-caption img {
 	display: block;
