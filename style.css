@@ -464,6 +464,7 @@ a:hover {
 #secondary.widget-area {
 	margin: 24px 0 0;
 	margin: 1.714285714rem 0 0;
+	overflow:hidden;
 }
 
 /* Header */
@@ -604,6 +605,7 @@ img.header-image {
 }
 #secondary-footer.widget-area {
 	width: auto;
+	overflow:hidden;
 }
 .footer-widgets  {
 	width:32%;
