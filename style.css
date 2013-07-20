@@ -182,6 +182,9 @@ textarea {
 	overflow: auto;
 	vertical-align: top;
 }
+select {
+	max-width:100%;
+}
 
 /* Reset non-text input types */
 input[type="checkbox"],
