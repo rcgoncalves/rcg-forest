@@ -237,7 +237,7 @@ msgstr ""
 msgid "Published by <span class=\"by-author\">%1$s</span>."
 msgstr ""
 
-#: ../functions.php:285
+#: functions.php:285
 #, php-format
 msgid "Tagged with %3$s."
 msgstr ""
