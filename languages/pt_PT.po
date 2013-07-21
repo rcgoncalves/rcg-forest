@@ -1,11 +1,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: RCG Forest 2.0\n"
-"Report-Msgid-Bugs-To: rcgoncalves.pt@gmail.com\n"
-"POT-Creation-Date: 2013-07-11 23:42+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-21 22:50+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Rui Carlos Gonçalves <rcgoncalves.pt@gmail.com>\n"
 "Language-Team: Rui Carlos Gonçalves <rcgoncalves.pt@gmail.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,273 +16,278 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 
-#: 404.php:8
+#: ../404.php:8
 msgid "Error 404: Page Not Found"
 msgstr "Erro 404: Página Não Encontrada"
 
-#: 404.php:11
+#: ../404.php:11
 msgid "We can not find what you are looking for."
 msgstr "Não conseguimos encontrar o que procura."
 
-#: 404.php:12
+#: ../404.php:12
 #, php-format
 msgid "Return <a href=\"%s\">home</a>, or try search."
 msgstr "Volte à <a href=\"%s\">página inicial</a>, ou experimente a pesquisa."
 
-#: archive.php:16
+#: ../archive.php:16
 msgid "Author Archives: "
 msgstr "Arquivo do Autor: "
 
-#: archive.php:20
+#: ../archive.php:20
 msgid "Category Archives: "
 msgstr "Arquivo da Categoria: "
 
-#: archive.php:23
+#: ../archive.php:23
 msgid "Tag Archives: "
 msgstr "Arquivo da Tag: "
 
-#: archive.php:26
+#: ../archive.php:26
 msgid "Daily Archives: "
 msgstr "Arquivo Diário: "
 
-#: archive.php:29
+#: ../archive.php:29
 msgid "Monthly Archives: "
 msgstr "Arquivo Mensal: "
 
-#: archive.php:32
+#: ../archive.php:32
 msgid "Yearly Archives: "
 msgstr "Arquivo Anual: "
 
-#: archive.php:35
+#: ../archive.php:35
 msgid "Archives"
 msgstr "Arquivo"
 
-#: archive.php:68
-#: index.php:16
-#: search.php:21
-#: single.php:12
+#: ../archive.php:68
+#: ../index.php:16
+#: ../search.php:21
+#: ../single.php:12
 msgid "Post navigation"
 msgstr "Navegação de artigos"
 
-#: archive.php:69
-#: index.php:17
-#: search.php:22
+#: ../archive.php:69
+#: ../index.php:17
+#: ../search.php:22
 msgid "&larr; Older posts"
 msgstr "&larr; Artigos mais antigos"
 
-#: archive.php:70
-#: index.php:18
-#: search.php:23
+#: ../archive.php:70
+#: ../index.php:18
+#: ../search.php:23
 msgid "Newer posts &rarr;"
 msgstr "Artigos mais recentes &rarr;"
 
-#: archive.php:78
+#: ../archive.php:78
 msgid "No Results"
 msgstr "Sem Resultados"
 
-#: archive.php:81
+#: ../archive.php:81
 msgid "Sorry, but no entries were found for this archive."
 msgstr "Desculpe, mas não foram encontradas entradas neste arquivo."
 
-#: comments.php:12
+#: ../comments.php:12
 #, php-format
 msgid "One reply"
 msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
 msgstr[0] "Uma resposta"
 msgstr[1] "%1$s respostas em &ldquo;%2$s&rdquo;"
 
-#: comments.php:25
+#: ../comments.php:25
 msgid "Comment navigation"
 msgstr "Navegação de comentários"
 
-#: comments.php:26
+#: ../comments.php:26
 msgid "&larr; Older Comments"
 msgstr "&larr; Comentários mais antigos"
 
-#: comments.php:27
+#: ../comments.php:27
 msgid "Newer Comments &rarr;"
 msgstr "Comentários mais recentes &rarr;"
 
-#: comments.php:34
+#: ../comments.php:34
 msgid "Comments are closed."
 msgstr "Os comentários estão fechados."
 
-#: content-page.php:8
-#: content.php:42
+#: ../content-page.php:8
+#: ../content.php:39
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: content-page.php:13
-#: content.php:50
-#: image.php:45
+#: ../content-page.php:13
+#: ../content.php:47
+#: ../image.php:45
 msgid "Edit"
 msgstr "Editar"
 
-#: content.php:14
-#: content.php:19
+#: ../content.php:11
+#: ../content.php:16
 #, php-format
 msgid "Permalink to %s"
 msgstr "Ligação permanente para %s"
 
-#: content.php:37
+#: ../content.php:34
 msgid "Continue reading &rarr;"
 msgstr "Continuar a ler &rarr;"
 
-#: content.php:54
-#: image.php:49
+#: ../content.php:51
+#: ../image.php:49
 msgid "Leave a reply"
 msgstr "Deixar uma resposta"
 
-#: content.php:54
-#: image.php:49
+#: ../content.php:51
+#: ../image.php:49
 msgid "1 Reply"
 msgstr "1 resposta"
 
-#: content.php:54
-#: image.php:49
+#: ../content.php:51
+#: ../image.php:49
 msgid "% Replies"
 msgstr "% respostas"
 
-#: footer.php:10
+#: ../footer.php:10
 msgid "Semantic Personal Publishing Platform"
 msgstr "Plataforma semântica pessoal de publicação"
 
-#: footer.php:10
+#: ../footer.php:10
 msgid "Proudly powered by WordPress"
 msgstr "Criado com WordPress"
 
-#: footer.php:12
+#: ../footer.php:12
 msgid "Theme RCG Forest"
 msgstr "Tema RCG Forest"
 
-#: functions.php:19
+#: ../functions.php:19
 msgid "Primary Menu"
 msgstr "Menu primário"
 
-#: functions.php:44
+#: ../functions.php:44
 #, php-format
 msgid "Page %s"
 msgstr "Página %s"
 
-#: functions.php:72
+#: ../functions.php:72
 msgid "Sidebar"
 msgstr "Barra lateral"
 
-#: functions.php:74
+#: ../functions.php:74
 msgid "Appears on posts and pages sidebar, except when using a custom page template."
 msgstr "Aparece em artigos e páginas, excepto quando usa um template personalizado."
 
-#: functions.php:81
+#: ../functions.php:81
 msgid "First Footer Widget"
 msgstr "Primeiro widget do rodapé"
 
-#: functions.php:83
+#: ../functions.php:83
 msgid "Appears on posts and pages footer (left), except when using Front Page template."
 msgstr "Aparece no rodapé de artigos e páginas (esquerda), excepto quando usar o template Front Page."
 
-#: functions.php:90
+#: ../functions.php:90
 msgid "Second Footer Widget"
 msgstr "Segundo widget do rodapé"
 
-#: functions.php:92
+#: ../functions.php:92
 msgid "Appears on posts and pages footer (center), except when using Front Page template."
 msgstr "Aparece no rodapé de artigos e páginas (centro), excepto quando usar o template Front Page."
 
-#: functions.php:99
+#: ../functions.php:99
 msgid "Third Footer Widget"
 msgstr "Terceiro widget de rodapé"
 
-#: functions.php:101
+#: ../functions.php:101
 msgid "Appears on posts and pages footer (right), except when using Front Page template."
 msgstr "Aparece no rodapé de artigos e páginas (direita), excepto quando usar o template Front Page."
 
-#: functions.php:108
+#: ../functions.php:108
 msgid "First Front Page Footer Widget"
 msgstr "Primeiro widget de rodapé (Front Page)"
 
-#: functions.php:110
+#: ../functions.php:110
 msgid "Appears when using Front Page template on footer (left)."
 msgstr "Aparece no rodapé (esquerda) do template Front Page."
 
-#: functions.php:117
+#: ../functions.php:117
 msgid "Second Front Page Footer Widget"
 msgstr "Segundo widget de rodapé (Front Page)"
 
-#: functions.php:119
+#: ../functions.php:119
 msgid "Appears when using Front Page template on footer (center)."
 msgstr "Aparece no rodapé (centro) do template Front Page."
 
-#: functions.php:126
+#: ../functions.php:126
 msgid "Third Front Page Footer Widget"
 msgstr "Terceiro widget de rodapé (Front Page)"
 
-#: functions.php:128
+#: ../functions.php:128
 msgid "Appears when using Front Page template on footer (right)."
 msgstr "Aparece no rodapé (direita) do template Front Page."
 
-#: functions.php:273
+#: ../functions.php:273
 #, php-format
 msgid "View all posts by %s"
 msgstr "Ver todos os artigos de %s"
 
-#: functions.php:276
-#: functions.php:277
+#: ../functions.php:276
+#: ../functions.php:277
 msgid ", "
 msgstr ", "
 
-#: functions.php:280
+#: ../functions.php:280
 #, php-format
 msgid "Published by <span class=\"by-author\">%1$s</span>, in %2$s."
 msgstr "Publicado por <span class=\"by-author\">%1$s</span>, em %2$s."
 
-#: functions.php:282
+#: ../functions.php:282
 #, php-format
 msgid "Published by <span class=\"by-author\">%1$s</span>."
 msgstr "Publicado por <span class=\"by-author\">%1$s</span>."
 
-#: header.php:46
+#: ../functions.php:285
+#, php-format
+msgid "Tagged with %3$s."
+msgstr "Marcada com %3$s."
+
+#: ../header.php:46
 msgid "Menu"
 msgstr "Menu"
 
-#: header.php:47
+#: ../header.php:47
 msgid "Skip to content"
 msgstr "Avançar para o conteúdo"
 
-#: image.php:57
+#: ../image.php:57
 msgid "&larr; Previous"
 msgstr "&larr; Anterior"
 
-#: image.php:58
+#: ../image.php:58
 msgid "Next &rarr;"
 msgstr "Seguinte &rarr;"
 
-#: index.php:26
+#: ../index.php:26
 msgid "No posts to display"
 msgstr "Nenhum artigo para mostrar"
 
-#: index.php:29
+#: ../index.php:29
 msgid "Sorry, but no results were found."
 msgstr "Pedimos desculpa, mas não foram encontrados resultados."
 
-#: search.php:10
+#: ../search.php:10
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Resultados da Pesquisa por: %s"
 
-#: search.php:31
+#: ../search.php:31
 msgid "Nothing Found"
 msgstr "Não foi encontrado nada"
 
-#: search.php:34
+#: ../search.php:34
 msgid "Sorry, but no entries matched your search criteria. Please try again with different keywords."
 msgstr "Pedimos desculpa, mas nenhuma entrada correspondeu aos seus critérios de procura. Por favor volte a tentar com palavras-chave diferentes."
 
-#: single.php:13
+#: ../single.php:13
 msgctxt "Previous post link"
 msgid "&larr;"
 msgstr "&larr;"
 
-#: single.php:14
+#: ../single.php:14
 msgctxt "Next post link"
 msgid "&rarr;"
 msgstr "&rarr;"

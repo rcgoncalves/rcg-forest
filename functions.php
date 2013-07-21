@@ -282,7 +282,7 @@ function rcg_forest_entry_meta() {
 		$utility_text = __('Published by <span class="by-author">%1$s</span>.', 'rcg-forest');
 	}
 	if(is_single() && $tags_list) {
-		$utility_text .= ' Tagged with %3$s.';
+		$utility_text .= ' ' . __('Tagged with %3$s.', 'rcg-forest');
 	}
 
 	printf($utility_text, $author, $categories_list, $tags_list);

@@ -4,7 +4,7 @@ Theme URI: http://rcgoncalves.pt/project/rcg-forest/
 Author: Rui Carlos Gonçalves
 Author URI: http://rcgoncalves.pt/
 Description: A simple green theme (v2).  New version of the theme, with a responsive design, using HTML5 and CSS3, and providing support for recent WordPress features, such as featured images, custom menus, custom background, or custom page templates.  (This theme was originally inspired on Green Grapes theme.  The code base of the current version was adapted from TwentyTwelve theme.)
-Version: 2.0.2
+Version: 2.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, green, gray, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -308,7 +308,7 @@ img.wp-post-image {
 }
 .wp-caption img {
 	display: block;
-	clear: both;
+	clear:both;
 	max-width: 100%;
 	margin: 0 auto 4px!important;
 }
