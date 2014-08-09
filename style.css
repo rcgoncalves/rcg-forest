@@ -4,7 +4,7 @@ Theme URI: http://rcgoncalves.pt/project/rcg-forest/
 Author: Rui Carlos Gonçalves
 Author URI: http://rcgoncalves.pt/
 Description: A simple green theme (v2).  New version of the theme, with a responsive design, using HTML5 and CSS3, and providing support for recent WordPress features, such as featured images, custom menus, custom background, or custom page templates.  (This theme was originally inspired on Green Grapes theme.  The code base of the current version was adapted from TwentyTwelve theme.)
-Version: 2.0.4
+Version: 2.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, green, gray, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -721,6 +721,7 @@ footer[role="contentinfo"] a:hover {
 .entry-summary,
 .mu_register {
 	line-height: 1.5714285714;
+	text-align: justify;
 }
 .entry-content h1,
 .comment-body h1 {
@@ -823,10 +824,15 @@ footer[role="contentinfo"] a:hover {
 }
 .entry-content code,
 .comment-body code {
+	background-color: #f8f8f8;
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	font-family: Consolas, Monaco, Lucida Console, monospace;
 	font-size: 12px;
 	font-size: 0.857142857rem;
 	line-height: 2;
+	padding: 0 1px;
+	padding: 0 0.07142857143rem;
+	white-space: pre-wrap;
 }
 .entry-content pre,
 .comment-body pre {
@@ -1034,6 +1040,9 @@ body.attachment .entry-attachment .attachment {
 	padding: 0.5rem 0;
 	margin: 14px 0 0 0;
 	margin: 1rem 0 0 0;
+	font-size: 13px;
+	font-size: 0.9285714286rem;
+	text-align: justify;
 }
 .comment .comment-author img.avatar {
 	float: right;

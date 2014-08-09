@@ -4,7 +4,7 @@ if (!isset($content_width)) {
 	$content_width = 625;
 }
 function rcg_forest_content_width() {
-	if(is_page_template('page-templates/full-width.php') || is_attachment() || !is_active_sidebar('sidebar')) {
+	if(is_page_template('page-templates/full-width.php') || is_attachment() || !is_active_sidebar('sidebar-1')) {
 		global $content_width;
 		$content_width = 960;
 	}
@@ -52,7 +52,7 @@ add_filter('wp_title', 'rcg_forest_wp_title', 10, 2);
 
 // Body classes
 function rcg_forest_body_class($classes) {
-	if(!is_active_sidebar('sidebar') || is_page_template('page-templates/full-width.php')) {
+	if(!is_active_sidebar('sidebar-1') || is_page_template('page-templates/full-width.php')) {
 		$classes[] = 'full-width';
 	}
 	if(is_page_template('page-templates/front-page.php')) {
@@ -70,7 +70,7 @@ add_filter('body_class', 'rcg_forest_body_class');
 function rcg_forest_widgets_init() {
 	register_sidebar(array(
 		'name' => __('Sidebar', 'rcg-forest'),
-		'id' => 'sidebar',
+		'id' => 'sidebar-1',
 		'description' => __('Appears on posts and pages sidebar, except when using a custom page template.', 'rcg-forest'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
