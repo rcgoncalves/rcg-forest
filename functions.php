@@ -138,7 +138,7 @@ add_action('widgets_init', 'rcg_forest_widgets_init');
 // Custom header
 function rcg_forest_custom_header_setup() {
 	$args = array(
-		'default-text-color'     => 'ddd',
+		'default-text-color'     => 'd5edcb',
 		'default-image'          => get_template_directory_uri() . '/inc/forest.png',
 		'height'                 => 150,
 		'width'                  => 1040,
@@ -228,7 +228,7 @@ function rcg_forest_admin_style() {
 		text-decoration:none;
 	}
 	#top1 h1 a:hover {
-		color:#21759b;
+		color:#c4edaa;
 	}
 	#top2 {
 		width: 1040px;
