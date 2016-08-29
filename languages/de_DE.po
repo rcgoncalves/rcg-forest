@@ -1,0 +1,277 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RCG Forest 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Danny Schmarsel <danny@schmarsel.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"Language: de_DE\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#: 404.php:8
+msgid "Error 404: Page Not Found"
+msgstr "Fehler 404: Seite nicht gefunden"
+
+#: 404.php:11
+msgid "We can not find what you are looking for."
+msgstr "Wir können nicht finden, wonach du suchst."
+
+#: 404.php:12
+#, php-format
+msgid "Return <a href=\"%s\">home</a>, or try search."
+msgstr "Kehre zur <a href=\"%s\">Startseite</a> zurück oder verwende die Suche."
+
+#: archive.php:16
+msgid "Author Archives: "
+msgstr "Autor-Archiv:"
+
+#: archive.php:20
+msgid "Category Archives: "
+msgstr "Kategorie-Archiv:"
+
+#: archive.php:23
+msgid "Tag Archives: "
+msgstr "Schlagwort-Archiv:"
+
+#: archive.php:26
+msgid "Daily Archives: "
+msgstr "Tägliches Archiv:"
+
+#: archive.php:29
+msgid "Monthly Archives: "
+msgstr "Monatliches Archiv:"
+
+#: archive.php:32
+msgid "Yearly Archives: "
+msgstr "Jährliches Archiv:"
+
+#: archive.php:35
+msgid "Archives"
+msgstr "Archiv"
+
+#: archive.php:68 index.php:16 search.php:21 single.php:12
+msgid "Post navigation"
+msgstr "Beitragsnavigation"
+
+#: archive.php:69 index.php:17 search.php:22
+msgid "&larr; Older posts"
+msgstr "&larr; Ältere Beiträge"
+
+#: archive.php:70 index.php:18 search.php:23
+msgid "Newer posts &rarr;"
+msgstr "Neuere Beiträge &rarr;"
+
+#: archive.php:78
+msgid "No Results"
+msgstr "Keine Ergebnisse"
+
+#: archive.php:81
+msgid "Sorry, but no entries were found for this archive."
+msgstr "Tut mir Leid, aber es wurden keine Ergebnisse für dieses Archiv gefunden."
+
+#: comments.php:12
+#, php-format
+msgid "One reply"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Kommentar"
+msgstr[1] "%1$s Kommentare für &ldquo;%2$s&rdquo;"
+
+#: comments.php:25
+msgid "Comment navigation"
+msgstr "Kommentar-Navigation"
+
+#: comments.php:26
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: comments.php:27
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: comments.php:34
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: content-page.php:8 content.php:42
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: content-page.php:13 content.php:50 image.php:45
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: content.php:14 content.php:19
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink zu %s"
+
+#: content.php:37
+msgid "Continue reading &rarr;"
+msgstr "Weiterlesen &rarr;"
+
+#: content.php:54 image.php:49
+msgid "Leave a reply"
+msgstr "Hinterlasse einen Kommentar"
+
+#: content.php:54 image.php:49
+msgid "1 Reply"
+msgstr "1 Kommentar"
+
+#: content.php:54 image.php:49
+msgid "% Replies"
+msgstr "% Kommentare"
+
+#: footer.php:10
+msgid "Semantic Personal Publishing Platform"
+msgstr "Semantic Personal Publishing Platform"
+
+#: footer.php:10
+msgid "Proudly powered by WordPress"
+msgstr "Stolz präsentiert von WordPress"
+
+#: footer.php:12
+msgid "Theme RCG Forest"
+msgstr "Thema RCG Forest"
+
+#: functions.php:19
+msgid "Primary Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:44
+#, php-format
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: functions.php:72
+msgid "Sidebar"
+msgstr "Seitenleiste"
+
+#: functions.php:74
+msgid "Appears on posts and pages sidebar, except when using a custom page template."
+msgstr "Erscheint auf der Seitenleiste von Beiträgen und Seiten, außer es wird ein benutzerdefiniertes Seiten-Template verwendet."
+
+#: functions.php:81
+msgid "First Footer Widget"
+msgstr "Erstes Footer-Widget"
+
+#: functions.php:83
+msgid "Appears on posts and pages footer (left), except when using Front Page template."
+msgstr "Erscheint auf dem Footer von Beiträgen und Seiten (links), außer es wird ein Hauptseiten-Template verwendet."
+
+#: functions.php:90
+msgid "Second Footer Widget"
+msgstr "Zweites Footer-Widget"
+
+#: functions.php:92
+msgid "Appears on posts and pages footer (center), except when using Front Page template."
+msgstr "Erscheint auf dem Footer von Beiträgen und Seiten (zentriert), außer es wird ein Hauptseiten-Template verwendet."
+
+#: functions.php:99
+msgid "Third Footer Widget"
+msgstr "Drittes Footer-Widget"
+
+#: functions.php:101
+msgid "Appears on posts and pages footer (right), except when using Front Page template."
+msgstr "Erscheint auf dem Footer von Beiträgen und Seiten (rechts), außer es wird ein Hauptseiten-Template verwendet."
+
+#: functions.php:108
+msgid "First Front Page Footer Widget"
+msgstr "Erstes Hauptseiten-Footer-Widget"
+
+#: functions.php:110
+msgid "Appears when using Front Page template on footer (left)."
+msgstr "Erscheint wenn ein Hauptseiten-Template im Footer (links) verwendet wird."
+
+#: functions.php:117
+msgid "Second Front Page Footer Widget"
+msgstr "Zweites Hauptseiten-Footer-Widget"
+
+#: functions.php:119
+msgid "Appears when using Front Page template on footer (center)."
+msgstr "Erscheint wenn ein Hauptseiten-Template im Footer (zentriert) verwendet wird."
+
+#: functions.php:126
+msgid "Third Front Page Footer Widget"
+msgstr "Drittes Hauptseiten-Footer-Widget"
+
+#: functions.php:128
+msgid "Appears when using Front Page template on footer (right)."
+msgstr "Erscheint wenn ein Hauptseiten-Template im Footer (rechts) verwendet wird."
+
+#: functions.php:273
+#, php-format
+msgid "View all posts by %s"
+msgstr "Zeige alle Beiträge von %s"
+
+#: functions.php:276 functions.php:277
+msgid ", "
+msgstr ", "
+
+#: functions.php:280
+#, php-format
+msgid "Published by <span class=\"by-author\">%1$s</span>, in %2$s."
+msgstr "Veröffentlicht von <span class=\"by-author\">%1$s</span>, in %2$s."
+
+#: functions.php:282
+#, php-format
+msgid "Published by <span class=\"by-author\">%1$s</span>."
+msgstr "Veröffentlicht von <span class=\"by-author\">%1$s</span>."
+
+#: functions.php:285
+#, php-format
+msgid "Tagged with %3$s."
+msgstr "Schlagwörter: %3$s."
+
+#: header.php:46
+msgid "Menu"
+msgstr "Menü"
+
+#: header.php:47
+msgid "Skip to content"
+msgstr "Springe zum Inhalt"
+
+#: image.php:57
+msgid "&larr; Previous"
+msgstr "&larr; Zurück"
+
+#: image.php:58
+msgid "Next &rarr;"
+msgstr "Vor &rarr;"
+
+#: index.php:26
+msgid "No posts to display"
+msgstr "Keine Beiträge zum Anzeigen"
+
+#: index.php:29
+msgid "Sorry, but no results were found."
+msgstr "Entschuldigung, aber es wurden keine Ergebnisse gefunden."
+
+#: search.php:10
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: search.php:31
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: search.php:34
+msgid "Sorry, but no entries matched your search criteria. Please try again with different keywords."
+msgstr "Entschuldige, aber keine Einträge passen zu deinen Suchkriterien. Bitte versuche es erneut, mit anderen Schlagwörtern."
+
+#: single.php:13
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: single.php:14
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
