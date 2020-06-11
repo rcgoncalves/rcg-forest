@@ -4,13 +4,13 @@ Theme URI: https://rcgoncalves.pt/project/rcg-forest/
 Author: Rui Carlos Gonçalves
 Author URI: https://rcgoncalves.pt/
 Description: A simple green theme (v2).  New version of the theme, with a responsive design, using HTML5 and CSS3, and providing support for recent WordPress features, such as featured images, custom menus, custom background, or custom page templates.  (This theme was originally inspired on Green Grapes theme.  The code base of the current version was adapted from TwentyTwelve theme.)
-Version: 2.2.1
+Version: 2.3.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, footer-widgets
+Tags: blog, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, footer-widgets
 Text Domain: rcg-forest
 
-RCG Forest WordPress Theme, Copyright 2018, Rui Carlos Gonçalves
+RCG Forest WordPress Theme, Copyright 2020, Rui Carlos Gonçalves
 Derived from Twenty Twelve, Copyright 2012, the WordPress team
 RCG Forest is distributed under the terms of the GNU GPL
 forest.png header image, Copyright 2012, Rui Carlos Gonçalves
@@ -554,6 +554,9 @@ img.header-image {
 }
 
 /* Sidebar */
+.widget select {
+	max-width: 100%;
+}
 .widget-area .widget {
 	hyphens: auto;
 	margin-bottom: 28px;
@@ -580,6 +583,11 @@ img.header-image {
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
 }
+.widget-area .textwidget ol {
+	list-style: decimal;
+	margin: 0 0 24px;
+	margin: 0 0 1.714285714rem;
+}
 .widget-area .widget li {
 	list-style: square;
 	margin-left: 16px;
@@ -588,6 +596,10 @@ img.header-image {
 .widget-area .textwidget li {
 	margin-left: 36px;
 	margin-left: 2.571428571rem;
+}
+.widget-area .textwidget li > ul,
+.widget-area .textwidget li > ol {
+	margin-bottom: 0;
 }
 .widget-area .widget a {
 	color: #759b21;
@@ -1207,6 +1219,7 @@ a.comment-edit-link:hover {
 	margin-left: 12px;
 	margin-left: 0.857142857rem;
 }
+.wp-calendar-nav,
 #wp-calendar {
 	margin: 0;
 	width: 100%;
@@ -1216,10 +1229,19 @@ a.comment-edit-link:hover {
 	color: #686868;
 }
 #wp-calendar th,
-#wp-calendar td,
+#wp-calendar td {
+	text-align: center;
+}
 #wp-calendar caption {
 	text-align: left;
 }
+.wp-calendar-nav {
+	display: table;
+}
+.wp-calendar-nav span {
+	display: table-cell;
+}
+.wp-calendar-nav-next,
 #wp-calendar #next {
 	padding-right: 24px;
 	padding-right: 1.714285714rem;
