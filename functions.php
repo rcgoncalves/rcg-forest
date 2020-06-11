@@ -30,9 +30,9 @@ function rcg_forest_scripts_styles() {
 	if(is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
-	wp_enqueue_script('rcg-forest-navigation', get_template_directory_uri() . '/inc/navigation.js', array(), '2.1.4', true);
-	wp_enqueue_style('rcg-forest-style', get_stylesheet_uri(), array(), '2.1.4');
-	wp_enqueue_style('rcg-forest-ie', get_template_directory_uri() . '/inc/ie.css', array('rcg-forest-style'), '2.1.4');
+	wp_enqueue_script('rcg-forest-navigation', get_template_directory_uri() . '/inc/navigation.js', array(), wp_get_theme()->get( 'Version' ), true);
+	wp_enqueue_style('rcg-forest-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ));
+	wp_enqueue_style('rcg-forest-ie', get_template_directory_uri() . '/inc/ie.css', array('rcg-forest-style'), wp_get_theme()->get( 'Version' ));
 	$wp_styles->add_data('rcg-forest-ie', 'conditional', 'lt IE 9');
 }
 add_action('wp_enqueue_scripts', 'rcg_forest_scripts_styles');
@@ -146,7 +146,7 @@ add_action('after_setup_theme', 'rcg_forest_custom_header_setup');
 function rcg_forest_header_style() {
 	$text_color = get_header_textcolor();
 
-	if($text_color == get_theme_support('custom-header', 'default-text-color')) {
+	if(get_theme_support('custom-header', 'default-text-color') == $text_color) {
 		return;
 	}
 
@@ -268,7 +268,7 @@ function rcg_forest_entry_meta() {
 	} else {
 		$utility_text = __('Published by <span class="by-author">%1$s</span>.', 'rcg-forest');
 	}
-	if(is_single() && $tags_list) {
+	if(is_single() && $tags_list && ! is_wp_error($tags_list)) {
 		$utility_text .= ' ' . __('Tagged with %3$s.', 'rcg-forest');
 	}
 
@@ -294,3 +294,12 @@ function rcg_forest_fix_category_tag ($cat_output) {
 	return str_replace(array('rel="category tag"', 'rel="category"'), '', $cat_output);
 }
 add_filter('the_category', 'rcg_forest_fix_category_tag');
+
+if ( ! function_exists( 'wp_body_open' ) ) :
+	/**
+         * Backward compatibility.
+	 */
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
+endif;
