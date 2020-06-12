@@ -1,0 +1,66 @@
+#!/bin/bash
+# ==================================================================================================
+# Script to automate building of distribution package.
+# It can be used to generate a package for the current development version (pre-release), or for the
+# stable version (release).
+# For the former, the new version number should be provided as the script parameter.
+# For the later either no parameters should be provided, or the parameter -gh can be used.  When -gh
+# parameter is used, the script will output the changes for the latest version (this is used by
+# GitHub workflow to create a release).
+# ==================================================================================================
+
+set -e
+set -u
+
+readonly CHANGELOG_FILE='CHANGELOG.md'
+readonly DIST='rcg-forest'
+
+# Line where changelog for unreleased version begins.
+readonly CL_UNREL_LINE="$(grep -n "## \[Unreleased\]" "$CHANGELOG_FILE" | cut -d : -f 1)"
+# Line where changelog for the latest release begins.
+readonly CL_REL_LINE="$(grep -n "## \[[0-9]" "$CHANGELOG_FILE" | cut -d : -f 1 | head -1)"
+
+
+if [[ $# -eq 0 ]] || [[ "$1" = "-gh" ]]; then
+    # No version defined, so we are building a release package.
+    readonly VERSION="$(sed -n "${CL_REL_LINE}p" "$CHANGELOG_FILE" | sed 's/##\ \[\(.*\)\].*/\1/')"
+
+    # Changelog should not contain entries for unreleased version.
+    readonly CH_UNREL_TXT="$(sed -n "$(( $CL_UNREL_LINE + 1 )),$(( $CL_REL_LINE - 1))p" "$CHANGELOG_FILE")"
+    if [[ ! -z "$CH_UNREL_TXT" ]]; then
+        echo 'Changelog contains entries for unreleased version.' >&2
+        exit 1
+    fi
+
+    readonly CHANGELOG="$(cat -s "$CHANGELOG_FILE" | tail +"$CL_REL_LINE" | sed -e "s/^##\ \[\(.*\)\].*/= \1 =/" -e "s/^###\ \(.*\)/\1:/" -e "s/^-/*/")"
+    readonly YEAR="$(sed -n "${CL_REL_LINE}p" "$CHANGELOG_FILE" | sed 's/##\ \[.*\]\ \([0-9]*\)*-.*/\1/')"
+
+    if [[ $# -gt 0 ]]; then # <=> "$1" = "-gh"
+        # Output latest changes (used for creating the release  in GitHub)
+        readonly CL_REL_END="$(grep -n "## \[[0-9]" "$CHANGELOG_FILE" | cut -d : -f 1 | sed -n "2p")"
+        CHANGES="$(sed -n "$CL_REL_LINE,$(( $CL_REL_END - 1))p" "$CHANGELOG_FILE" | sed 's/###\ \(.*\)/\1:/')"
+        # https://github.community/t/set-output-truncates-multiline-strings/16852/3
+        CHANGES="${CHANGES//'%'/'%25'}"
+        CHANGES="${CHANGES//$'\n'/'%0A'}"
+        CHANGES="${CHANGES//$'\r'/'%0D'}"
+        echo "$CHANGES"
+    fi
+else
+    # Version defined, so we are building a pre-release package.
+    readonly VERSION="$1"
+
+    readonly CHANGELOG="$(cat -s "$CHANGELOG_FILE" | tail +"$CL_UNREL_LINE" | sed -e "s/^##\ \[Unreleased\]/## [$VERSION]/" | sed -e "s/^##\ \[\(.*\)\].*/= \1 =/" -e "s/^###\ \(.*\)/\1:/" -e "s/^-/*/")"
+    readonly YEAR="$(date +%Y)"
+fi
+
+mkdir "$DIST"
+
+export VERSION
+export YEAR
+export CHANGELOG
+envsubst < 'src/style.css' > "$DIST/style.css"
+envsubst < 'src/readme.txt' > "$DIST/readme.txt"
+
+cp -r 'src/inc' 'src/languages' 'src/page-templates' src/*.php "$DIST"
+zip -r "$DIST.zip" "$DIST" > /dev/null
+rm -r "$DIST"
