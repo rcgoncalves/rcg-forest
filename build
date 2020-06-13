@@ -40,17 +40,13 @@ if [[ $# -eq 0 ]] || [[ "$1" = "-gh" ]]; then
         exit 1
     fi
 
-    readonly CHANGELOG="$(cat "$CHANGELOG_FILE" | tail +"$CL_REL_LINE" | sed -e "s/^##\ \[\(.*\)\].*/= \1 =/" -e "s/^###\ \(.*\)/\1:/" -e "s/^-/*/" | cat -s)"
+    readonly CHANGELOG="$(cat "$CHANGELOG_FILE" | tail +"$CL_REL_LINE" | sed -e 's/^##\ \[\(.*\)\].*/= \1 =/' -e 's/^###\ \(.*\)/\1:/' -e 's/^-/*/' | cat -s)"
     readonly YEAR="$(sed -n "${CL_REL_LINE}p" "$CHANGELOG_FILE" | sed 's/##\ \[.*\]\ \([0-9]*\)*-.*/\1/')"
 
     if [[ $# -gt 0 ]]; then # <=> "$1" = "-gh"
         # Output latest changes (used for creating the release  in GitHub)
-        readonly CL_REL_END="$(grep -n "## \[[0-9]" "$CHANGELOG_FILE" | cut -d : -f 1 | sed -n "2p")"
-        CHANGES="$(sed -n "$CL_REL_LINE,$(( $CL_REL_END - 1))p" "$CHANGELOG_FILE" | sed 's/###\ \(.*\)/\1:/')"
-        # https://github.community/t/set-output-truncates-multiline-strings/16852/3
-        CHANGES="${CHANGES//'%'/'%25'}"
-        CHANGES="${CHANGES//$'\n'/'%0A'}"
-        CHANGES="${CHANGES//$'\r'/'%0D'}"
+        readonly CL_REL_END="$(grep -n "## \[[0-9]" "$CHANGELOG_FILE" | cut -d : -f 1 | sed -n '2p')"
+        readonly CHANGES="$(sed -n "$CL_REL_LINE,$(( $CL_REL_END - 1))p" "$CHANGELOG_FILE" | sed 's/\(###\ .*\)/\1:/')"
         echo "$CHANGES"
     fi
 else

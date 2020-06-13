@@ -15,7 +15,10 @@ jobs:
       - name: Build package
         run: |
           CHANGES="$(./build -gh)"
-          echo $CHANGES
+          echo "$CHANGES"
+          CHANGES="${CHANGES//'%'/'%25'}"
+          CHANGES="${CHANGES//$'\n'/'%0A'}"
+          CHANGES="${CHANGES//$'\r'/'%0D'}"
           echo "::set-env name=CHANGES::$CHANGES"
       - name: Create Release
         id: create_release
