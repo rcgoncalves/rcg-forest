@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+### Changed
+- Improve CSS
+
 ### Removed
 - Drop support for IE 7 and IE 8
 
