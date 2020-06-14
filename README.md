@@ -1,4 +1,4 @@
-# RCG Forest
+# RCG Forest: a green WordPress theme
 
 ## About
 **RCG Forest** is a theme for WordPress blogs, originally inspired by [Green Grapes](http://themes.rock-kitty.net/green-grapes/) theme.
@@ -15,6 +15,14 @@ The main features of this theme are:
 
 The theme was rewritten for version 2 to provide a responsive design, based on HTML5 and CSS3. The support for some WordPress features (such as featured images, or custom headers) was also improved.
 
+
+## Links
+* [Theme on WordPress](https://wordpress.org/themes/rcg-forest/)
+* [Download](https://github.com/rcgoncalves/rcg-forest/releases/latest)
+* [Change log](https://github.com/rcgoncalves/rcg-forest/blob/master/CHANGELOG.md)
+* [Issues](https://github.com/rcgoncalves/rcg-forest/issues)
+
+
 ## License
 RCG Forest, a green theme for WordPress blogs
 
@@ -22,6 +30,7 @@ Copyright (C) 2008-2020 Rui Carlos Gonçalves
 
 This theme is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+You should have received a copy of the GNU General Public License along with this theme; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
