@@ -2,10 +2,12 @@
 
 ## [Unreleased]
 ### Changed
-- Improve CSS
+- Improve CSS.
+- Update header image to double dimensions.
+- Change header image format to JPEG to reduce file size.
 
 ### Removed
-- Drop support for IE 7 and IE 8
+- Drop support for IE 7 and IE 8.
 
 ## [2.3.0] 2020-06-13
 ### Added

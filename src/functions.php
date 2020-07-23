@@ -124,7 +124,7 @@ add_action('widgets_init', 'rcg_forest_widgets_init');
 function rcg_forest_custom_header_setup() {
 	$args = array(
 		'default-text-color'     => 'd5edcb',
-		'default-image'          => get_template_directory_uri() . '/inc/forest.png',
+		'default-image'          => get_template_directory_uri() . '/inc/forest.jpg',
 		'height'                 => 150,
 		'width'                  => 1040,
 		'max-width'              => 1040,

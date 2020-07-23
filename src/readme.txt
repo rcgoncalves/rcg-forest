@@ -19,4 +19,4 @@ ${CHANGELOG}
 
 
 == Resources ==
-* forest.png © 2012 Rui Carlos Gonçalves, GPL2
+* forest.jpg © 2012 Rui Carlos Gonçalves, GPL2
