@@ -19,7 +19,7 @@ The theme was rewritten for version 2 to provide a responsive design, based on H
 ## Links
 * [Theme on WordPress](https://wordpress.org/themes/rcg-forest/)
 * [Downloads](https://github.com/rcgoncalves/rcg-forest/releases/latest)
-* [Change log](https://github.com/rcgoncalves/rcg-forest/blob/master/CHANGELOG.md)
+* [Changelog](https://github.com/rcgoncalves/rcg-forest/blob/master/CHANGELOG.md)
 * [Issues](https://github.com/rcgoncalves/rcg-forest/issues)
 
 
@@ -28,9 +28,10 @@ RCG Forest, a green WordPress theme
 
 Copyright (C) 2008-2020 Rui Carlos Gonçalves
 
-This theme is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+This theme is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version.
 
 This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this theme; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+You should have received a copy of the GNU General Public License along with this theme.
+If not, see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
