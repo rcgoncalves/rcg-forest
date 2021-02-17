@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+
+
+## [3.0.1] 2021-02-17
 ### Changed
 - Fix CSS for `ul`.
 
@@ -13,6 +16,7 @@
 
 ### Removed
 - Drop support for IE 7 and IE 8.
+
 
 ## [2.3.0] 2020-06-13
 ### Added
