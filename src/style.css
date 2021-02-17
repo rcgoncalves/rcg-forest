@@ -579,7 +579,7 @@ img.header-image {
 	margin-bottom: 1.714285714rem;
 }
 .widget-area .textwidget ul {
-	list-style: disc outside;
+	list-style: square outside;
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
 }
@@ -589,7 +589,6 @@ img.header-image {
 	margin: 0 0 1.714285714rem;
 }
 .widget-area .widget li {
-	list-style: square;
 	margin-left: 16px;
 	margin-left: 1.142857142rem;
 }
@@ -821,7 +820,6 @@ footer[role="contentinfo"] a:hover {
 .entry-content li,
 .comment-body li,
 .mu_register li {
-	list-style: square;
 	margin-left: 16px;
 	margin-left: 1.142857142rem;
 }
