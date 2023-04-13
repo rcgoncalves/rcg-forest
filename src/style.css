@@ -497,6 +497,7 @@ a:hover {
 .site-top1 header {
   	float: left;
 }
+.site-top1 form.search-form,
 .site-top1 form#searchform {
 	display: inline-block;
 	float: right;
@@ -506,7 +507,9 @@ a:hover {
 	clip: rect(1px, 1px, 1px, 1px);
 }
 .site-top1 #searchform input#s,
-.site-top1 #searchform input#searchsubmit {
+.site-top1 .search-form input.search-field,
+.site-top1 #searchform input#searchsubmit,
+.site-top1 .search-form input.search-submit {
 	line-height: 1.3636363636;
 	vertical-align: middle;
 	font-size: 1.1rem;
@@ -557,7 +560,7 @@ img.header-image {
 .widget-area .widget p {
 	margin-bottom: 2.4rem;
 }
-.widget-area .textwidget ul {
+.widget-area .widget ul {
 	list-style: square outside;
 	margin: 0 0 2.4rem;
 }
@@ -568,11 +571,8 @@ img.header-image {
 .widget-area .widget li {
 	margin-left: 1.6rem;
 }
-.widget-area .textwidget li {
-	margin-left: 3.6rem;
-}
-.widget-area .textwidget li > ul,
-.widget-area .textwidget li > ol {
+.widget-area .widget li > ul,
+.widget-area .widget li > ol {
 	margin-bottom: 0;
 }
 .widget-area .widget a {
@@ -583,6 +583,10 @@ img.header-image {
 }
 .widget-area #s {
 	width: 53.66666666666%;
+}
+
+.widget-area .widget_recent_comments .has-avatars li {
+	margin-left: 0;
 }
 
 /* Footer */
@@ -1108,7 +1112,9 @@ a.comment-edit-link:hover {
 	margin-left: 0;
 }
 .widget-area #searchform input#s,
-.widget-area #searchform input#searchsubmit {
+.widget-area .search-form input.search-field,
+.widget-area #searchform input#searchsubmit,
+.widget-area .search-form input.search-submit {
 	vertical-align: middle;
 	font-size: 1.1rem;
 }
@@ -1142,9 +1148,10 @@ a.comment-edit-link:hover {
 .wp-calendar-nav span {
 	display: table-cell;
 }
-.wp-calendar-nav-next,
-#wp-calendar #next {
-	padding-right: 2.4rem;
+.wp-calendar-nav .wp-calendar-nav-prev {
+	text-align: left;
+}
+.wp-calendar-nav .wp-calendar-nav-next {
 	text-align: right;
 }
 .widget_search label {
@@ -1184,7 +1191,8 @@ img#wpstats {
 	.site-top1 .site-description {
 		display: none;
 	}
-	.site-top1 form#searchform {
+	.site-top1 form#searchform,
+	.site-top1 form.search-form {
 		margin-top: 0.7rem;
 		padding: 0 0 0.7rem 0;
 	}
@@ -1240,8 +1248,9 @@ img#wpstats {
 	.site-top1 header {
 		display: inline-block;
 	}
-	.site-top1 form#searchform {
-		padding: 2.5rem 0;
+	.site-top1 form#searchform,
+	.site-top1 form.search-form {
+		padding: 2.7rem 0;
 		vertical-align: top;
 	}
 	.main-navigation {
@@ -1434,6 +1443,7 @@ img#wpstats {
 		color: #000;
 	}
 	#searchform,
+	.search-form,
 	.author-avatar,
 	#colophon,
 	#respond,
