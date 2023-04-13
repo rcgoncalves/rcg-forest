@@ -1,6 +1,12 @@
 # Changelog
 
 ## [Unreleased]
+### Changed
+- Internal code improvements.
+- Improve CSS.
+
+### Removed
+- Drop support for IE.
 
 
 ## [3.0.1] 2021-02-17

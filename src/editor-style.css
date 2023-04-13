@@ -4,7 +4,7 @@ Description: Used to style the TinyMCE editor.
 */
 
 html {
-	font-size: 87.5%;
+	font-size: 62.5%;
 }
 html .mceContentBody {
 	max-width: 625px;
@@ -12,8 +12,7 @@ html .mceContentBody {
 body {
 	color: #444;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	font-size: 1rem;
+	font-size: 1.4rem;
 	line-height: 1;
 	text-rendering: optimizeLegibility;
 	vertical-align: baseline;
@@ -34,13 +33,11 @@ h6 {
 	margin: 1.5rem 0;
 }
 h1 {
-	font-size: 21px;
-	font-size: 1.5rem;
+	font-size: 2.1rem;
 	line-height: 1.5;
 }
 h2 {
-	font-size: 18px;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 	line-height: 1.6;
 }
 h3 {
@@ -59,8 +56,7 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin: 24px;
-	margin-bottom: 1.714285714rem;
+	margin: 2.4rem;
 }
 
 
@@ -128,8 +124,7 @@ pre {
 	border: 1px solid #ededed;
 	color: #666;
 	font-family: Consolas, Monaco, Lucida Console, monospace;
-	font-size: 12px;
-	font-size: 0.857142857rem;
+	font-size: 1.2rem;
 	line-height: 1.714285714;
 	margin: 1rem 0;
 	overflow: auto;
@@ -140,8 +135,7 @@ kbd,
 samp,
 var {
 	font-family: Consolas, Monaco, Lucida Console, monospace;
-	font-size: 12px;
-	font-size: 0.857142857rem;
+	font-size: 1.2rem;
 	line-height: 1.7;
 }
 abbr,
@@ -181,18 +175,15 @@ input[type="text"] {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	font-family: inherit;
-	padding: 6px;
-	padding: 0.428571429rem;
+	padding: 0.6rem;
 }
 textarea {
 	border: 1px solid #d5d2ca;
 	border-radius: 3px;
 	font-family: inherit;
-	font-size: 12px;
-	font-size: 0.857142857rem;
+	font-size: 1.2rem;
 	line-height: 1.714285714;
-	padding: 10px;
-	padding: 0.714285714rem;
+	padding: 1rem;
 	width: 96%;
 }
 
@@ -219,22 +210,18 @@ a:hover {
 .alignleft {
 	display: inline;
 	float: left;
-	margin: 12px 24px 12px 0;
-	margin: 0.857142857rem 1.714285714rem 0.857142857rem 0;
+	margin: 1.2rem 2.4rem 1.2rem 0;
 }
 .alignright {
 	display: inline;
 	float: right;
-	margin: 12px 0 12px 24px;
-	margin: 0.857142857rem 0 0.857142857rem 1.714285714rem;
+	margin: 1.2rem 0 1.2rem 2.4rem;
 }
 .aligncenter {
 	clear: both;
 	display: block;
-	margin-top: 12px;
-	margin-top: 0.857142857rem;
-	margin-bottom: 12px;
-	margin-bottom: 0.857142857rem;
+	margin-top: 1.2rem;
+	margin-bottom: 1.2rem;
 }
 
 
@@ -246,17 +233,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	color: #757575;
-	font-size: 12px;
-	font-size: 0.857142857rem;
+	font-size: 1.2rem;
 	line-height: 2;
-	margin: 0 0 24px;
-	margin: 0 0 1.714285714rem;
+	margin: 0 0 2.4rem;
 	width: 100%;
 }
 tr th {
 	color: #636363;
-	font-size: 11px;
-	font-size: 0.785714286rem;
+	font-size: 1.1rem;
 	font-weight: bold;
 	line-height: 2.181818182;
 	text-align: left;
@@ -320,8 +304,7 @@ img.wp-smiley {
 .wp-caption-dd {
 	color: #757575;
 	font-style: italic;
-	font-size: 12px;
-	font-size: 0.857142857rem;
+	font-size: 1.2rem;
 	line-height: 2;
 	margin: 0 0 0.2rem;
 	padding: 0;
