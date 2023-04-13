@@ -1,7 +1,8 @@
 # Changelog
 
 ## [Unreleased]
-
+### Changed
+- Improve CSS of widgets and search form.
 
 ## [4.0.0] 2023-04-13
 ### Changed
