@@ -1,12 +1,14 @@
 #!/bin/bash
 # ==================================================================================================
+#
 # Script to automate building of distribution package.
 # It can be used to generate a package for the current development version (pre-release), or for the
 # stable version (release).
 # For the former, the new version number should be provided as the script parameter.
-# For the later either no parameters should be provided, or the parameter -gh can be used.  When -gh
-# parameter is used, the script will output the changes for the latest version (this is used by
+# For the latter either no parameters should be provided, or the parameter -gh can be used.  When
+# -gh parameter is used, the script will output the changes for the latest version (this is used by
 # GitHub workflow to create a release).
+#
 # ==================================================================================================
 
 set -e
@@ -19,9 +21,9 @@ readonly DIST='rcg-forest'
 ## Min required WP version
 readonly MIN_WP="4.0"
 ## Max tested WP version
-readonly MAX_WP="5.4.2"
+readonly MAX_WP="6.2"
 ## Min required PHP version
-readonly MIN_PHP="5.6"
+readonly MIN_PHP="7.4"
 
 # Line where changelog for unreleased version begins.
 readonly CL_UNREL_LINE="$(grep -n "## \[Unreleased\]" "$CHANGELOG_FILE" | cut -d : -f 1)"

@@ -26,7 +26,6 @@ add_action('after_setup_theme', 'rcg_forest_setup');
 
 // Scripts and styles
 function rcg_forest_scripts_styles() {
-	global $wp_styles, $wp_scripts;
 	if(is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
@@ -149,7 +148,7 @@ function rcg_forest_header_style() {
 	}
 
 	?>
-	<style type="text/css">
+	<style>
 		<?php
 		if(!display_header_text()) :
 		?>
@@ -176,7 +175,7 @@ function rcg_forest_header_style() {
 function rcg_forest_admin_style() {
 	$text_color = get_header_textcolor();
 	?>
-	<style type="text/css">
+	<style>
 	#top {
 		border: 1px dashed #666;
 	}
@@ -295,7 +294,7 @@ add_filter('the_category', 'rcg_forest_fix_category_tag');
 
 if ( ! function_exists( 'wp_body_open' ) ) :
 	/**
-         * Backward compatibility.
+	 * Backward compatibility.
 	 */
 	function wp_body_open() {
 		do_action( 'wp_body_open' );

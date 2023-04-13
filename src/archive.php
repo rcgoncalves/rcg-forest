@@ -18,10 +18,10 @@ get_header();
 						rewind_posts();
 					elseif(is_category()) : // Category archive
 						_e('Category Archives: ', 'rcg-forest');
-						single_cat_title('');
+						single_cat_title();
 					elseif(is_tag()) : // Tag archive
 						_e('Tag Archives: ', 'rcg-forest');
-						single_tag_title('');
+						single_tag_title();
 					elseif(is_day()) : // Daily archive
 						_e('Daily Archives: ', 'rcg-forest');
 						echo get_the_date();
