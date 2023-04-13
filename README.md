@@ -17,10 +17,10 @@ The theme was rewritten for version 2 to provide a responsive design, based on H
 
 
 ## Links
-* [Theme on WordPress](https://wordpress.org/themes/rcg-forest/)
-* [Downloads](https://github.com/rcgoncalves/rcg-forest/releases/latest)
-* [Changelog](https://github.com/rcgoncalves/rcg-forest/blob/master/CHANGELOG.md)
-* [Issues](https://github.com/rcgoncalves/rcg-forest/issues)
+- [Theme on WordPress](https://wordpress.org/themes/rcg-forest/)
+- [Downloads](https://github.com/rcgoncalves/rcg-forest/releases/latest)
+- [Changelog](https://github.com/rcgoncalves/rcg-forest/blob/master/CHANGELOG.md)
+- [Issues](https://github.com/rcgoncalves/rcg-forest/issues)
 
 
 ## License
