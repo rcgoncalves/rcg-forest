@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+
+
+## [4.0.0] 2023-04-13
 ### Changed
 - Internal code improvements.
 - Improve CSS.
