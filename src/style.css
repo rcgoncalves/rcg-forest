@@ -435,14 +435,20 @@ a:hover {
 .site .screen-reader-text {
 	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
 }
+
 .main-navigation .assistive-text:hover,
 .main-navigation .assistive-text:active,
-.main-navigation .assistive-text:focus {
+.main-navigation .assistive-text:focus,
+.site .screen-reader-text:hover,
+.site .screen-reader-text:active,
+.site .screen-reader-text:focus {
 	background: #fff;
 	border: 2px solid #333;
 	border-radius: 3px;
 	clip: auto!important;
+	clip-path: none;
 	color: #000;
 	display: block;
 	font-size: 12px;
@@ -495,7 +501,7 @@ a:hover {
 	padding: 0 1.4rem;
 }
 .site-top1 header {
-  	float: left;
+	float: left;
 }
 .site-top1 form.search-form,
 .site-top1 form#searchform {
@@ -505,6 +511,7 @@ a:hover {
 .site-top1 label.screen-reader-text {
 	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
 }
 .site-top1 #searchform input#s,
 .site-top1 .search-form input.search-field,
@@ -802,7 +809,7 @@ footer[role="contentinfo"] a:hover {
 	background-color: #f8f8f8;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 2px;
-	font-family: Consolas, Monaco, Lucida Console, monospace;
+	font-family: Consolas, Monaco, 'Lucida Console', monospace;
 	font-size: 1.2rem;
 	line-height: 2;
 	padding: 0.3rem 0.3rem 0.2rem 0.3rem;
@@ -812,7 +819,7 @@ footer[role="contentinfo"] a:hover {
 .comment-body pre {
 	border: 1px solid #ededed;
 	color: #666;
-	font-family: Consolas, Monaco, Lucida Console, monospace;
+	font-family: Consolas, Monaco, 'Lucida Console', monospace;
 	font-size: 1.2rem;
 	line-height: 1.8333333333;
 	margin: 1.4rem 0;
