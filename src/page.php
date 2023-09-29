@@ -5,11 +5,11 @@ get_header();
 	<div id="content" role="main">
 		<?php
 		while(have_posts()) :
-       			the_post();
+			the_post();
 			get_template_part('content', 'page');
 			comments_template('', true);
 		endwhile;
-	       	?>
+		?>
 	</div>
 </div>
 <?php

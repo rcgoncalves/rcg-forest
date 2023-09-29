@@ -1,7 +1,9 @@
 # Changelog
 
 ## [Unreleased]
-
+### Changed
+- Add alternative CSS for deprecated elements.
+- Improve CSS for fonts.
 
 ## [4.0.1] 2023-04-17
 ### Changed
