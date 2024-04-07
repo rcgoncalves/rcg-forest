@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+### Added
+- CSS color variables.
+
+### Changed
+- Improve mobile CSS.
+- Improve figures/captions CSS.
+- Improve buttons CSS.
+- Fix footer CSS.
+
+
 ## [4.0.2] 2023-09-30
 ### Changed
 - Add alternative CSS for deprecated elements.
