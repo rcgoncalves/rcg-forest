@@ -1,46 +1,35 @@
 on:
   push:
     tags:
-      - 'v*'
+      - 'v*.*.*'
 
-name: Create Release
+name: 'Release'
 
 jobs:
   build:
-    name: Create Release
-    runs-on: ubuntu-latest
+    name: 'Create Release'
+    runs-on: 'ubuntu-latest'
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Build package
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+      - name: 'Checkout code'
+        uses: 'actions/checkout@v4'
+      - name: 'Build package'
         run: |
-          CHANGES="$(./build -gh)"
-          echo "$CHANGES"
-          CHANGES="${CHANGES//'%'/'%25'}"
-          CHANGES="${CHANGES//$'\n'/'%0A'}"
-          CHANGES="${CHANGES//$'\r'/'%0D'}"
-          echo "::set-env name=CHANGES::$CHANGES"
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+          {
+            echo 'CHANGES<<EOF'
+            ./build -gh
+            echo EOF
+          } >> "$GITHUB_ENV"
+      - name: 'Create Draft Release'
+        id: 'create_release'
+        uses: 'softprops/action-gh-release@v2'
+        if: "startsWith(github.ref, 'refs/tags/')"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
         with:
-          tag_name: ${{ github.ref }}
-          release_name: RCG Forest ${{ github.ref }}
+          tag_name: '${{ github.ref_name }}'
+          name: 'RCG Forest ${{ github.ref_name }}'
+          files: 'rcg-forest.zip'
           body: |
             ${{ env.CHANGES }}
           draft: true
           prerelease: false
-      - name: Upload Release Asset
-        id: upload_release_asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./rcg-forest.zip
-          asset_name: rcg-forest.zip
-          asset_content_type: application/zip
