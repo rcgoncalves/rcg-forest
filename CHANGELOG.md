@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## [4.2.0] 2024-05-29
 ### Changed
 - Improve mobile menu.
 
