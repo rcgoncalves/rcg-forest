@@ -1260,29 +1260,40 @@ img#wpstats {
 	.main-navigation div.nav-menu > ul {
 		display: none;
 	}
-	.main-navigation .nav-menu > ul a {
+	.main-navigation ul.nav-menu a {
 		display: block;
 		padding: 0.8rem;
 	}
-	.main-navigation .nav-menu > ul > li > a {
+	.main-navigation ul.nav-menu > li > a {
 		font-size: 1.5rem;
-	    font-weight: bold;
+		font-weight: bold;
 	}
-	.main-navigation .nav-menu > ul > li > ul > li > a {
+	.main-navigation ul.nav-menu > li > ul > li > a {
 		font-size: 1.4rem;
 	}
-	.main-navigation .nav-menu > ul > li > ul > li > ul > li a {
+	.main-navigation ul.nav-menu > li > ul > li > ul > li a {
 		font-size: 1.3rem;
 	}
 
 	.site-content article {
-	    margin-bottom: 3rem;
+		margin-bottom: 3rem;
 	}
 	.entry-meta .comments-link {
-	    padding-left: 2rem;
+		padding-left: 2rem;
 	}
 }
 
+@media screen and (max-width: 599px) {
+	.main-navigation ul.nav-menu.toggled-on,
+	.menu-toggle {
+		display: block;
+		margin: 0 2.4rem;
+	}
+
+	.main-navigation ul.nav-menu.toggled-on {
+		background-color: var(--alt-background-color);
+	}
+}
 
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {

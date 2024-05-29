@@ -26,7 +26,7 @@ The theme was rewritten for version 2 to provide a responsive design, based on H
 ## License
 RCG Forest, a green WordPress theme
 
-Copyright (C) 2008-2020 Rui Carlos Gonçalves
+Copyright (C) 2008-2024 Rui Carlos Gonçalves
 
 This theme is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version.
 
