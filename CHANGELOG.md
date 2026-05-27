@@ -1,10 +1,14 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- CSS width variables
+
 
 ## [4.2.0] 2024-05-29
 ### Changed
 - Improve mobile menu.
+
 
 ## [4.1.0] 2024-04-07
 ### Added
@@ -22,9 +26,11 @@
 - Add alternative CSS for deprecated elements.
 - Improve CSS for fonts.
 
+
 ## [4.0.1] 2023-04-17
 ### Changed
 - Improve CSS of widgets and search form.
+
 
 ## [4.0.0] 2023-04-13
 ### Changed

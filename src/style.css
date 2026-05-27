@@ -172,6 +172,9 @@ img {
 	--light-border-color: #ededed;
 	--mid-border-color: #ccc;
 	--dark-border-color: #999;
+	--main-content-width: 65.104166667%;
+	--sidebar-width: 26.04166667%;
+	--site-max-width: 104rem;
 }
 
 /* Repeatable patterns
@@ -658,7 +661,7 @@ img.header-image {
 	margin: 0 auto;
 	float: none;
 	overflow: auto;
-	max-width: 104rem;
+	max-width: var(--site-max-width);
 	width: 100%;
 }
 #secondary-footer.widget-area {
@@ -686,7 +689,7 @@ footer#colophon {
 	clear: both;
 	font-size: 1.2rem;
 	line-height: 2;
-	max-width: 104rem;
+	max-width: var(--site-max-width);
 	margin: 0 auto;
 	padding: 2.4rem 0;
 	text-align: center;
@@ -1299,12 +1302,12 @@ img#wpstats {
 @media screen and (min-width: 600px) {
 	.site {
 		margin: 0 auto;
-		max-width: 96rem;
+		max-width: calc(var(--site-max-width) - 8rem);
 		overflow: hidden;
 	}
 	.site-content {
 		float: left;
-		width: 65.104166667%;
+		width: var(--main-content-width);
 	}
 	body.template-front-page .site-content,
 	body.single-attachment .site-content,
@@ -1313,7 +1316,7 @@ img#wpstats {
 	}
 	#secondary.widget-area {
 		float: right;
-		width: 26.04166667%;
+		width: var(--sidebar-width);
 	}
 	.site-header h1,
 	.site-header h2 {
@@ -1458,7 +1461,7 @@ img#wpstats {
 		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 	}
 	.site-top-center {
-		max-width: 104rem;
+		max-width: var(--site-max-width);
 	}
 	.site-top1 h1,
 	.site-top1 h2 {
@@ -1466,7 +1469,7 @@ img#wpstats {
 	}
 	.site-top2 {
 		margin: 0 auto;
-		max-width: 104rem;
+		max-width: var(--site-max-width);
 	}
 	#secondary-footer.widget-area {
 		padding: 2.4rem 4rem;
