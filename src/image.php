@@ -4,7 +4,7 @@ get_header();
 <div id="primary" class="site-content">
 	<div id="content" role="main">
 	<?php
-	while(have_posts()) :
+	while (have_posts()):
 		the_post();
 		?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class('image-attachment'); ?>>
@@ -15,13 +15,13 @@ get_header();
 			<div class="entry-content">
 				<div class="entry-attachment">
 					<div class="attachment">
-						<a href="<?php echo wp_get_attachment_url(); ?>" rel="attachment">
+						<a href="<?php echo esc_url(wp_get_attachment_url()); ?>" rel="attachment">
 							<?php
 							echo wp_get_attachment_image($post->ID, 'full');
 							?>
 							</a>
 						<?php
-						if(!empty($post->post_excerpt)) : // caption
+						if (!empty($post->post_excerpt)): // caption
 						?>
 							<div class="entry-caption">
 								<?php
@@ -42,11 +42,11 @@ get_header();
 				<footer class="entry-meta">
 					<?php
 					rcg_forest_entry_meta();
-					edit_post_link(__('Edit', 'rcg-forest'), ' <span class="edit-link">', '</span>');
-					if(comments_open()) :
+					edit_post_link(esc_html__('Edit', 'rcg-forest'), ' <span class="edit-link">', '</span>');
+					if (comments_open()):
 					?>
 						<span class="comments-link">
-							<?php comments_popup_link('<span class="leave-reply">' . __('Leave a reply', 'rcg-forest') . '</span>', __('1 Reply', 'rcg-forest'), __('% Replies', 'rcg-forest')); ?>
+							<?php comments_popup_link('<span class="leave-reply">' . esc_html__('Leave a reply', 'rcg-forest') . '</span>', esc_html__('1 Reply', 'rcg-forest'), esc_html__('% Replies', 'rcg-forest')); ?>
 						</span>
 					<?php
 					endif;
@@ -54,8 +54,8 @@ get_header();
 				</footer>
 			</article>
 			<nav id="image-navigation" class="navigation" role="navigation">
-				<span class="nav-previous"><?php previous_image_link(false, __('&larr; Previous', 'rcg-forest')); ?></span>
-				<span class="nav-next"><?php next_image_link(false, __('Next &rarr;', 'rcg-forest')); ?></span>
+				<span class="nav-previous"><?php previous_image_link(false, esc_html__('&larr; Previous', 'rcg-forest')); ?></span>
+				<span class="nav-next"><?php next_image_link(false, esc_html__('Next &rarr;', 'rcg-forest')); ?></span>
 			</nav>
 			<?php
 			comments_template();

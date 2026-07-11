@@ -1,0 +1,15 @@
+name: 'Code Checks'
+
+on: 'pull_request'
+
+jobs:
+  phpcs:
+    name: 'Code Checks'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v4'
+      - name: 'Check'
+        uses: '10up/wpcs-action@stable'
+        with:
+        #  enable_warnings: true
+          standard: 'WordPress-VIP-Go'
