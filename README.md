@@ -1,7 +1,7 @@
 # RCG Forest: a green WordPress theme
 
 ## About
-**RCG Forest** is a theme for WordPress blogs, originally inspired by [Green Grapes](http://themes.rock-kitty.net/green-grapes/) theme.
+**RCG Forest** is a theme for WordPress blogs, originally inspired by Green Grapes theme.
 
 The theme uses a responsive design, using HTML5 and CSS3, and provides support for recent WordPress features, such as featured images, custom menus, custom background, or custom page templates.
 The main features of this theme are:
@@ -19,14 +19,14 @@ The theme was rewritten for version 2 to provide a responsive design, based on H
 ## Links
 - [Theme on WordPress](https://wordpress.org/themes/rcg-forest/)
 - [Downloads](https://github.com/rcgoncalves/rcg-forest/releases/latest)
-- [Changelog](https://github.com/rcgoncalves/rcg-forest/blob/master/CHANGELOG.md)
+- [Changelog](https://github.com/rcgoncalves/rcg-forest/blob/main/CHANGELOG.md)
 - [Issues](https://github.com/rcgoncalves/rcg-forest/issues)
 
 
 ## License
 RCG Forest, a green WordPress theme
 
-Copyright (C) 2008-2024 Rui Carlos Gonçalves
+Copyright (C) 2008-2026 Rui Carlos Gonçalves
 
 This theme is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version.
 
