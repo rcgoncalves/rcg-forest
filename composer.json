@@ -1,0 +1,15 @@
+{
+  "name": "rcgoncalves/rcg-forest",
+  "type": "wordpress-theme",
+  "require-dev": {
+    "automattic/vipwpcs": "^3.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=WordPress-VIP-Go src/"
+  }
+}
